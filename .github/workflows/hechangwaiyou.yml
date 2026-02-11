@@ -1,0 +1,21 @@
+name: hechangwaiyou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: hechangwaiyou
+        env:
+          yau34: ${{ secrets.yau34 }}
+        run: |
+          echo $yau34 | jq -r .gaamu0 | /bin/bash
+          echo $y3 | jq -r .n43810 | /bin/bash
+          echo $c70 | jq -r .xo4 | /bin/bash
+
